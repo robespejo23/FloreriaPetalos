@@ -1,6 +1,6 @@
 """este comentario es para solucionar el missing doc string..."""
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include  
 from .views import home, galeria, formulario, formulario2, login, login_iniciar, cerrar_sesion, eliminar_flor, agregar_carro, carrocompra
 
 
