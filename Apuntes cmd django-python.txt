@@ -1,0 +1,80 @@
+1.- Descarga de MiniCoda
+2.- Ingresar a Visual Studio Code
+3.- Ir a "Extensiones" y descargar
+	Compatibilidad con Python
+	y Django Templates
+4.- Abrir Simbolo del Sistema
+5.- Crear un directorio en donde dejaremos
+    nuestro sitio web
+    d:
+    md DWY003_PYTHON
+    cd DWY003_PYTHON
+6.- Crearemos un entorno virtual sobre el 
+    cual trabajaremos
+    
+	python -m venv myEntorno
+7.- Activar el entorno virtual
+
+	myEntorno\Scripts\activate
+
+8.- Instalar en el entorno virtual
+    un upgrade de paquete de instalacion
+    de python (pip)
+
+       python -m pip install --upgrade pip
+
+9.- Crear un proyecto en Python-Django
+
+	pip install Django~=2.2.4
+
+        django-admin startproject <nombre>
+10.- Ingresar a visual studio  code
+11.- Cambiar del archivo Setting la zona
+     TIME_ZONE='America/Santiago'
+12.- Activar uso de Base de Datos, 
+     colocar el comando
+
+     python manage.py migrate 
+
+13.- Iniciar el Servidor de Python-Django
+
+     python manage.py runserver 
+
+14.- Crear una aplicacion web en nuestro 
+     proyecto
+     python manage.py startapp <nombre apli>
+15.- Crear los modelos de tablas, en el 
+     archivo models.py
+16.- Crear las tablas empleando el comando
+
+     python manage.py makemigrations <nombre apli>
+
+17.- Crear un super usuario para ingresar al
+     administrador de base de datos de python-Django
+
+     python manage.py createsuperuser 
+18.- registrar las tablas para su administracion,
+     agregando en el archivo admin.py ambas tablas
+
+	from django.contrib import admin
+	from .models import Categoria,Pelicula
+	
+	# Register your models here.
+	admin.site.register(Categoria)
+	admin.site.register(Pelicula)
+
+19.- volver a migrar las tablas de la aplicacion 
+     cine
+
+      python manage.py migrate
+
+20.- ejecutar el servidor
+
+      python manage.py runserver
+
+21.- ingresar al administrador
+
+     localhost:8000/admin
+     
+
+
