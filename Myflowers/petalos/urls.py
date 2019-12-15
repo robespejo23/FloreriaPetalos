@@ -14,5 +14,7 @@ urlpatterns = [
     path('cerrar_sesion/', cerrar_sesion, name='CERRAR'),
     path('agregar_carro/<id>/', agregar_carro, name='A_CARRO'),
     path('carrocompra/', carrocompra, name='CARRO'),
+    path('formulario/', formulario, name='FORMU'),
+
 
 ]
